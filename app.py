@@ -24,7 +24,7 @@ def recommend(movie):
 
 
 st.header('Movie Recommender System')
-movies = pickle.load(open('C:/Users/swast/OneDrive/Desktop/New folder/movie-recommender-system-tmdb-dataset/venv/movie_list.pkl','rb'))
+movies = pickle.load(open('/movie_list.pkl','rb'))
 similarity = pickle.load(open('C:/Users/swast/OneDrive/Desktop/New folder\movie-recommender-system-tmdb-dataset/venv/similarity.pkl','rb'))
 
 movie_list = movies['title'].values
